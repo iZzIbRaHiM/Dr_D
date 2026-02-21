@@ -7,8 +7,9 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div>
-            <Link to="/" className="font-serif text-2xl font-bold gold-gradient-text">
-              Dr D Academy
+            <Link to="/" className="inline-flex items-center gap-2">
+              <img src="/Dr_D_logo.png" alt="Dr D Academy" className="h-8 w-auto" />
+              <span className="font-serif text-2xl font-bold gold-gradient-text">Dr D Academy</span>
             </Link>
             <p className="text-muted-foreground font-sans text-sm mt-4 leading-relaxed">
               The premier trading institute dedicated to transforming aspiring
