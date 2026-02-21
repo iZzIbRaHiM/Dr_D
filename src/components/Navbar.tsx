@@ -4,6 +4,8 @@ import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { navLinks } from "@/content/site-data";
 
+const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -28,6 +30,7 @@ const Navbar = () => {
             <Link
               key={link.href}
               to={link.href}
+              onClick={scrollToTop}
               className={`text-sm font-sans gold-underline hover:text-primary transition-colors duration-300 pb-1 ${
                 location.pathname === link.href ? "text-primary" : "text-muted-foreground"
               }`}
@@ -36,10 +39,11 @@ const Navbar = () => {
             </Link>
           ))}
           <Link
-            to="/apply"
+            to="/contact"
+            onClick={scrollToTop}
             className="ml-4 px-6 py-2.5 border border-primary/50 text-primary font-sans text-sm font-medium rounded golden-aura hover:bg-primary/10 transition-all duration-300"
           >
-            Apply for Membership
+            Contact us
           </Link>
         </nav>
 
@@ -66,7 +70,7 @@ const Navbar = () => {
                 <Link
                   key={link.href}
                   to={link.href}
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => { setIsOpen(false); scrollToTop(); }}
                   className={`font-sans transition-colors ${
                     location.pathname === link.href ? "text-primary" : "text-muted-foreground hover:text-primary"
                   }`}
@@ -75,11 +79,11 @@ const Navbar = () => {
                 </Link>
               ))}
               <Link
-                to="/apply"
-                onClick={() => setIsOpen(false)}
+                to="/contact"
+                onClick={() => { setIsOpen(false); scrollToTop(); }}
                 className="px-6 py-2.5 border border-primary/50 text-primary text-center font-sans text-sm font-medium rounded golden-aura"
               >
-                Apply for Membership
+                Contact us
               </Link>
             </div>
           </motion.nav>
