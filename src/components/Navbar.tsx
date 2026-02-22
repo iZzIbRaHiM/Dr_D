@@ -44,7 +44,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <Link to="/" onClick={scrollToTop} className="flex items-center gap-2">
-          <img src="/Dr_D_Header.png" alt="Dr D Academy" className="h-12 w-auto" />
+          <img src="/NewLogo.png" alt="Dr D Academy" className="h-12 w-auto" />
           <span className="font-serif text-2xl font-bold gold-gradient-text">Dr D Academy</span>
         </Link>
 

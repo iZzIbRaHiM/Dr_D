@@ -68,7 +68,7 @@ const HeroSection = () => {
         className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
       >
         <div className="absolute inset-0">
-          <img src={heroBg} alt="" className="w-full h-full object-cover opacity-80" />
+          <img src={heroBg} alt="" className="w-full h-full object-cover opacity-85" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent/30 to-[hsl(var(--background))]" />
         {overlay}
@@ -82,7 +82,7 @@ const HeroSection = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       <div className="absolute inset-0 z-0">
-        <img src={heroBg} alt="" className="w-full h-full object-cover opacity-80" />
+        <img src={heroBg} alt="" className="w-full h-full object-cover opacity-85" />
       </div>
       <Suspense
         fallback={

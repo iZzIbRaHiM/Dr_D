@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import aboutAcademy from "@/assets/about-academy.jpg";
 
 const AboutSection = () => {
   return (
@@ -32,7 +31,7 @@ const AboutSection = () => {
               </strong>{" "}
               Our program focuses on teaching long-tested strategies that have
               consistently proven to be profitable across multiple market
-              conditions.
+              conditions — taught on Deriv using the MT5 platform.
             </p>
             <a
               href="#courses"
@@ -51,25 +50,26 @@ const AboutSection = () => {
           >
             <div className="rounded-2xl overflow-hidden matte-card gold-border-glow">
               <img
-                src={aboutAcademy}
-                alt="Dr D Academy trading classroom"
+                src="/Abbas.jpeg"
+                alt="Syed Abbas Shah — trading and teaching on MT5"
                 className="w-full h-64 object-cover"
               />
             </div>
-            <div className="matte-card rounded-2xl p-8 golden-aura">
-              <div className="mb-4">
-                <h3 className="font-serif text-2xl font-bold mb-2">Dr. D</h3>
-                <p className="text-primary font-sans text-sm tracking-wide">
-                  Founder & Lead Mentor — Dr D Academy
+            <div className="matte-card rounded-2xl p-8 golden-aura flex gap-6">
+              <img
+                src="/Abbass.jpeg"
+                alt="Syed Abbas Shah"
+                className="w-24 h-24 rounded-full object-cover flex-shrink-0 border-2 border-primary/30"
+              />
+              <div>
+                <h3 className="font-serif text-2xl font-bold mb-2">Syed Abbas Shah</h3>
+                <p className="text-primary font-sans text-sm tracking-wide mb-3">
+                  CEO, Lead Trader & Instructor — Dr D Academy
+                </p>
+                <p className="text-muted-foreground font-sans leading-relaxed text-sm">
+                  Syed Abbas Shah trades and teaches on Deriv using MetaTrader 5 (MT5). He founded Dr D Academy to give aspiring traders the same disciplined, proven methods he uses — and to protect people from fraud. We educate, monitor, and guide until you trade consistently and confidently.
                 </p>
               </div>
-              <p className="text-muted-foreground font-sans leading-relaxed text-sm">
-                Dr D Academy was founded by Dr. D, an expert with over a decade of
-                experience in the field of trading. Our goal is to protect people from
-                fraudulent schemes and improve their lives by educating them to earn
-                independently. We carefully educate, monitor, and guide individuals
-                until they are consistently profitable.
-              </p>
             </div>
           </motion.div>
         </div>

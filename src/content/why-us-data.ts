@@ -9,7 +9,7 @@ export const advantages = [
   {
     title: "Institutional-Grade Mentorship",
     description:
-      "Learn directly from Dr. D and a team of experienced professionals who have collectively navigated over a decade of market cycles. Our mentors don't just teach theory — they trade live, share real-time analysis, and guide you through every market condition.",
+      "Learn directly from Syed Abbas Shah and a team of experienced professionals who have collectively navigated over a decade of market cycles. Our mentors don't just teach theory — they trade live, share real-time analysis, and guide you through every market condition.",
     points: [
       "One-on-one guidance from seasoned traders",
       "Live market analysis sessions every week",
@@ -50,19 +50,19 @@ export const advantages = [
 
 export const testimonials = [
   {
-    name: "Ahmed R.",
+    name: "Graduate",
     role: "Forex Trader",
     quote:
       "Dr D Academy completely transformed my understanding of the markets. The simplified strategies gave me the confidence to trade consistently. I went from losing money to being profitable within 3 months.",
   },
   {
-    name: "Fatima K.",
+    name: "Graduate",
     role: "Swing Trader",
     quote:
-      "The mentorship quality is unmatched. Dr. D's approach to risk management alone was worth the entire investment. I now trade with discipline and clarity I never thought possible.",
+      "The mentorship quality is unmatched. Syed Abbas Shah's approach to risk management alone was worth the entire investment. I now trade with discipline and clarity I never thought possible.",
   },
   {
-    name: "Hassan M.",
+    name: "Graduate",
     role: "Full-Time Trader",
     quote:
       "I joined with zero knowledge about Forex. Today, I trade full-time and support my family through my trading income. The lifetime community support keeps me sharp and accountable.",
@@ -88,7 +88,7 @@ export const whyUsFaqs = [
   {
     question: "Is the mentorship really for a lifetime?",
     answer:
-      "Yes. Once you enroll in Dr D Academy, you receive lifetime access to our premium community, all future course updates, and ongoing mentorship from Dr. D and our team of professionals.",
+      "Yes. Once you enroll in Dr D Academy, you receive lifetime access to our premium community, all future course updates, and ongoing mentorship from Syed Abbas Shah and our team of professionals.",
   },
   {
     question: "What is the fee structure?",

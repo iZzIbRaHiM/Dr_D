@@ -48,13 +48,14 @@ const About = () => {
       <section className="py-20">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-5 gap-12 items-start">
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} custom={0} className="md:col-span-2">
+            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} custom={0} className="md:col-span-2 space-y-6">
               <div className="glass-dark rounded-2xl p-8 gold-border-glow text-center">
-                <div className="w-40 h-40 mx-auto rounded-full bg-secondary border-2 border-primary/30 flex items-center justify-center mb-6">
-                  <span className="gold-gradient-text font-serif text-5xl font-bold">D</span>
-                </div>
+                <img src="/Abbass.jpeg" alt="Syed Abbas Shah" className="w-40 h-40 mx-auto rounded-full object-cover border-2 border-primary/30 mb-6" />
                 <h3 className="font-serif text-2xl font-bold text-foreground">{founderSection.name}</h3>
                 <p className="text-primary font-sans text-sm mt-1">{founderSection.title}</p>
+              </div>
+              <div className="rounded-2xl overflow-hidden gold-border-glow">
+                <img src="/Abbas.jpeg" alt="Syed Abbas Shah — trading on MT5" className="w-full aspect-video object-cover" />
               </div>
             </motion.div>
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} custom={1} className="md:col-span-3 space-y-6">

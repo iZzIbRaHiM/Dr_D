@@ -6,12 +6,12 @@ export const aboutHero = {
 };
 
 export const founderSection = {
-  name: "Dr. D",
-  title: "Founder & Lead Mentor",
+  name: "Syed Abbas Shah",
+  title: "CEO, Lead Trader & Instructor",
   bio: [
-    "Dr D Academy was founded by Dr. D, a seasoned trader with over a decade of experience navigating global financial markets. Driven by a passion for education and a desire to democratize trading knowledge, Dr. D created an institution that transforms complete beginners into consistently profitable traders.",
-    "Having witnessed countless aspiring traders fall victim to misinformation and fraudulent schemes, Dr. D established a mission-driven academy focused on transparency, discipline, and proven methodologies. Every strategy taught at Dr D Academy has been battle-tested across thousands of live market sessions.",
-    "Under Dr. D's leadership, the academy has mentored over 500 students, completed more than 1,000 training sessions, and maintained a remarkable 4.9-star rating — a testament to the quality of education and the transformative results achieved by our graduates.",
+    "Syed Abbas Shah is the CEO of Dr D Academy and an active trader and trainer on Deriv using the MetaTrader 5 (MT5) platform. With years of experience in forex and CFD markets, he has built the academy to turn beginners into confident, disciplined traders.",
+    "As a Deriv and MT5 specialist, Syed Abbas Shah teaches the same setups and risk-management rules he uses in his own trading. Every strategy at Dr D Academy is demonstrated live on MT5 and is designed to work across Forex, commodities, indices, and more.",
+    "Under his leadership, the academy has mentored hundreds of students, completed over 1,000 training sessions, and maintained a 4.9-star rating — a testament to the quality of education and the results achieved by our graduates.",
   ],
 };
 
@@ -45,7 +45,7 @@ export const values = [
 ];
 
 export const milestones = [
-  { year: "2019", event: "Dr D Academy founded with the first cohort of 15 students" },
+  { year: "2019", event: "Dr D Academy founded with the first cohort of students" },
   { year: "2020", event: "Launched comprehensive online trading programs" },
   { year: "2021", event: "Reached 200+ mentored students across Pakistan" },
   { year: "2022", event: "Introduced Advanced Technical Analysis program" },
