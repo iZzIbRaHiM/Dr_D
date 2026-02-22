@@ -1,17 +1,23 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import { useLenis } from "lenis/react";
 import { navLinks } from "@/content/site-data";
 
-const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 const SCROLL_THRESHOLD = 60;
 
 const Navbar = () => {
+  const lenis = useLenis();
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [scrolledPast, setScrolledPast] = useState(false);
   const location = useLocation();
+
+  const scrollToTop = useCallback(() => {
+    if (lenis) lenis.scrollTo(0, { duration: 1, immediate: false });
+    else window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [lenis]);
 
   useEffect(() => {
     const check = () => {
