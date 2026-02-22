@@ -65,6 +65,8 @@ const AboutSection = () => {
                 <h3 className="font-serif text-2xl font-bold mb-2">Syed Abbas Shah</h3>
                 <p className="text-primary font-sans text-sm tracking-wide mb-3">
                   CEO, Lead Trader & Instructor — Dr D Academy
+>>>>>>> 114e735 (Update branding, CEO info, Deriv referral, contact number - New Logo (NewLogo.png) across navbar, footer, 404 - Hero image opacity increased - Deriv section on home with referral link - CEO: Syed Abbas Shah, images Abbass.jpeg/Abbas.jpeg, Deriv/MT5 - Phone +923369872332 everywhere - Only Syed Abbas Shah named; testimonials anonymized)
+>>>>>>> 114e735 (Update branding, CEO info, Deriv referral, contact number - New Logo (NewLogo.png) across navbar, footer, 404 - Hero image opacity increased - Deriv section on home with referral link - CEO: Syed Abbas Shah, images Abbass.jpeg/Abbas.jpeg, Deriv/MT5 - Phone +923369872332 everywhere - Only Syed Abbas Shah named; testimonials anonymized)
                 </p>
                 <p className="text-muted-foreground font-sans leading-relaxed text-sm">
                   Syed Abbas Shah trades and teaches on Deriv using MetaTrader 5 (MT5). He founded Dr D Academy to give aspiring traders the same disciplined, proven methods he uses — and to protect people from fraud. We educate, monitor, and guide until you trade consistently and confidently.
