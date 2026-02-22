@@ -3,7 +3,7 @@ import aboutAcademy from "@/assets/about-academy.jpg";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-24 relative">
+    <section id="about" className="py-24 relative matte-bg">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -49,14 +49,14 @@ const AboutSection = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="space-y-6"
           >
-            <div className="rounded-2xl overflow-hidden gold-border-glow">
+            <div className="rounded-2xl overflow-hidden matte-card gold-border-glow">
               <img
                 src={aboutAcademy}
                 alt="Dr D Academy trading classroom"
                 className="w-full h-64 object-cover"
               />
             </div>
-            <div className="glass-dark rounded-2xl p-8 golden-aura">
+            <div className="matte-card rounded-2xl p-8 golden-aura">
               <div className="mb-4">
                 <h3 className="font-serif text-2xl font-bold mb-2">Dr. D</h3>
                 <p className="text-primary font-sans text-sm tracking-wide">

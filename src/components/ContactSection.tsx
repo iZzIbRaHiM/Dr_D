@@ -30,12 +30,16 @@ const ContactSection = () => {
     }
     setSubmitting(true);
     try {
-      const ok = await submitContactForm(formData);
-      if (ok) {
+      const result = await submitContactForm(formData);
+      if (result.ok) {
         toast.success("Thank you! We'll get back to you within 24 hours.");
         setFormData({ firstName: "", lastName: "", email: "", phone: "", message: "" });
       } else {
-        toast.error("Something went wrong. Please try again or contact us by phone/email.");
+        const msg =
+          result.error === "network"
+            ? "Could not reach the server. Check your connection and try again."
+            : "Submission failed. Please try again or contact us by phone/email.";
+        toast.error(msg);
       }
     } finally {
       setSubmitting(false);
@@ -99,7 +103,7 @@ const ContactSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="glass-dark rounded-2xl p-8 space-y-6"
+            className="matte-card rounded-2xl p-8 space-y-6"
           >
             <h3 className="font-serif text-2xl font-bold mb-2">
               Ready to Get Started?

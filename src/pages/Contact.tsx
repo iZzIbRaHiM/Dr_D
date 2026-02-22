@@ -43,12 +43,16 @@ const Contact = () => {
     }
     setSubmitting(true);
     try {
-      const ok = await submitContactForm(form);
-      if (ok) {
+      const result = await submitContactForm(form);
+      if (result.ok) {
         toast.success("Message sent. We'll get back to you within 24 hours.");
         setForm({ firstName: "", lastName: "", email: "", phone: "", message: "" });
       } else {
-        toast.error("Something went wrong. Please try again or contact us by phone/email.");
+        const msg =
+          result.error === "network"
+            ? "Could not reach the server. Check your connection and try again."
+            : "Submission failed. Please try again or contact us by phone/email.";
+        toast.error(msg);
       }
     } finally {
       setSubmitting(false);

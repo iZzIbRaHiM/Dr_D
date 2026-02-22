@@ -13,14 +13,15 @@ const ENDPOINT =
   (import.meta.env.VITE_CONTACT_FORM_ENDPOINT as string | undefined)?.trim() ||
   "https://formspree.io/f/mnjbgedz";
 
+export type SubmitResult = { ok: true } | { ok: false; error: "network" | "rejected" };
+
 /**
  * Submits contact form data to the configured endpoint (e.g. Formspree).
  * Set VITE_CONTACT_FORM_ENDPOINT in production to your form endpoint URL.
- * @returns true if submission succeeded, false otherwise
  */
-export async function submitContactForm(data: ContactFormData): Promise<boolean> {
+export async function submitContactForm(data: ContactFormData): Promise<SubmitResult> {
   if (!ENDPOINT?.trim()) {
-    return false;
+    return { ok: false, error: "rejected" };
   }
   try {
     const res = await fetch(ENDPOINT, {
@@ -31,9 +32,10 @@ export async function submitContactForm(data: ContactFormData): Promise<boolean>
       },
       body: JSON.stringify(data),
     });
-    return res.ok;
+    if (res.ok) return { ok: true };
+    return { ok: false, error: "rejected" };
   } catch {
-    return false;
+    return { ok: false, error: "network" };
   }
 }
 
